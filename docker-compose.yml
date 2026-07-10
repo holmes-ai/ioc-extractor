@@ -1,0 +1,7 @@
+services:
+  ioc-extractor:
+    build: .
+    image: ioc-extractor:local
+    volumes:
+      - ./examples:/home/analyst/examples:ro
+    command: ["examples/sample_report.txt", "-f", "json"]

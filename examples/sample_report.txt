@@ -1,0 +1,23 @@
+Threat Intelligence Report — Fictional Campaign "SilentOtter"
+================================================================
+This report is entirely fictional and created for demonstration
+and testing purposes only. All indicators below are synthetic.
+
+Summary:
+The actor used phishing emails from attacker[at]protonmail[.]com to
+deliver a malicious document that beaconed to a command-and-control
+server at 8[.]8[.]8[.]8 over hxxps://evil-corp[.]xyz/drop/payload.exe.
+
+Observed indicators:
+- C2 IP: 8[.]8[.]8[.]8
+- C2 domain: evil-corp[.]xyz
+- Delivery URL: hxxps://evil-corp[.]xyz/drop/payload.exe
+- Sender address: attacker[at]protonmail[.]com
+- Dropped file MD5: 44d88612fea8a8f36de82e1278abb02f
+- Dropped file SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- Exploited vulnerability: CVE-2023-4863
+- Attacker wallet: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
+
+Recommended actions: block the above indicators at the perimeter,
+hunt for the file hash across EDR telemetry, and patch the referenced
+CVE across all affected hosts.

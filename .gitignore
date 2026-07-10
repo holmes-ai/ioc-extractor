@@ -1,0 +1,51 @@
+# Python bytecode / packaging artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets / credentials — this project never needs any of these, but they
+# are ignored defensively so a contributor's local setup can never leak one.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.crt
+credentials.json
+secrets.toml
+secrets.yaml
+secrets.yml
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary / editor swap files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
