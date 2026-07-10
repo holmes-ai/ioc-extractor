@@ -24,4 +24,6 @@ Thumbs.db
 tests
 docs
 examples
-*.md
+CHANGELOG.md
+CONTRIBUTING.md
+SECURITY.md
